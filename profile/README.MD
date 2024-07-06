@@ -16,12 +16,12 @@ abstract:item type="item" {
     glow on
 }
 
-@medkit {
-    @model "model/cube.obj"
+override abstract:item {
+    override model "model/cube.obj"
 }
 
-@medkit {
-    !pointlessProp
+override abstract:item {
+    delete pointlessProp
 }
 
 armor inherit=abstract:item type="pickup" interactable
